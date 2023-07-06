@@ -264,3 +264,9 @@ window.addEventListener('scroll', function() {
       element.classList.add('active');
   }
 });
+
+var img = new Image();
+img.src = "./Images/rainbow-nebula.jpg";
+img.onload = function() {
+    document.getElementById('starfield').style.backgroundImage = 'url(' + img.src + ')';
+};

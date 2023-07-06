@@ -40,6 +40,7 @@ nav{
     margin-left: auto;
     margin-right: 0;
     border-radius: 50% 10% 0% 5% / 0% 0% 10% 100%;
+    z-index: 11;
 }
 
 nav ul {
@@ -183,7 +184,7 @@ footer p{
     position: relative;
     overflow: hidden;
     background-color: #000;
-    background-image: url(./Images/rainbow-nebula.jpg);
+    background-image: url(./Images/Lazy-nebula.jpg);
     cursor: default;
 }
 
