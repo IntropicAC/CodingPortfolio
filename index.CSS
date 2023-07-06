@@ -178,10 +178,10 @@ footer p{
 }
 #starfield {
 
-    width: 100%; /* Adjust to your needs */
-    height: 100vh; /* Adjust to your needs */
-    position: relative; /* So the canvas is positioned relative to this div */
-    overflow: hidden; /* So anything outside of this div is hidden */
+    width: 100%; 
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
     background-color: #000;
     background-image: url(./Images/rainbow-nebula.jpg);
     cursor: default;
