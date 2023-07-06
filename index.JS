@@ -233,3 +233,34 @@ function onMouseLeave() {
   pointerY = null;
 
 }
+
+
+window.addEventListener('scroll', function() {
+  var element = document.getElementById('about');
+  var position = element.getBoundingClientRect();
+
+
+  if(position.top < window.innerHeight && position.bottom >= 0) {
+      element.classList.add('active');
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.getElementById('skills');
+  var position = element.getBoundingClientRect();
+
+
+  if(position.top < window.innerHeight && position.bottom >= 0) {
+      element.classList.add('active');
+  }
+});
+
+window.addEventListener('scroll', function() {
+  var element = document.getElementById('projects');
+  var position = element.getBoundingClientRect();
+
+
+  if(position.top < window.innerHeight && position.bottom >= 0) {
+      element.classList.add('active');
+  }
+});

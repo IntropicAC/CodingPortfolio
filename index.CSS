@@ -204,3 +204,76 @@ footer p{
     font-size: 4rem;
       
 }
+
+
+.about-me-container .title-container, .about-me-container p {
+    opacity: 0;
+    position: relative;
+    left: -10rem; 
+    transition: all 2s ease; 
+}
+
+
+body:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+
+.about-me-container.active .title-container, .about-me-container.active p {
+    opacity: 1; 
+    left: 0; 
+}
+
+
+.skills-container .title-container, .skills-container i {
+    opacity: 0;  
+    position: relative;
+    left: -10rem; 
+    transition-property: left, opacity; 
+    transition-timing-function: ease; 
+    transition-duration: 2s; 
+}
+
+.skills-container i {
+    transition-delay: 0s; 
+}
+
+.skills-container i:nth-child(4) {
+    transition-delay: 0.5s; 
+}
+
+.skills-container i:nth-child(5) {
+    transition-delay: 1s; 
+}
+
+.skills-container i:nth-child(6) {
+    transition-delay: 1.5s; 
+}
+
+.skills-container i:nth-child(7) {
+    transition-delay: 2s; 
+}
+
+
+.skills-container.active .title-container, .skills-container.active i {
+    opacity: 1; 
+    left: 0; 
+}
+
+
+.project-container .title-container, .project-container details {
+    opacity: 0;  
+    position: relative;
+    left: -10rem; 
+    transition: all 2s ease; 
+}
+
+
+.project-container.active .title-container, .project-container.active details {
+    opacity: 1; 
+    left: 0; 
+}
