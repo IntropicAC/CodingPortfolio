@@ -21,20 +21,12 @@
     </nav>
     <h1 class="title-container"><span class="title">Contact</span></h1>
     <main>
-            <div class="form-container">
-                <form class="contact-form" action="submit_form.php" method="POST">
-                    <label for="name"><span>Your Name:</span></label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email"><span>Your Email:</span></label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message"><span>Your Message:</span></label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <input id="send-message" type="submit" value="Send">
-                </form>
-            </div>
+        <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT"/>
+        </form>
     </main>
 
     <footer>

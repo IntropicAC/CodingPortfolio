@@ -1,74 +1,81 @@
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: 'poppins', sans-serif;
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{ background:rgb(30,30,40); 
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    
 }
 
 main{
-    display: flex;
-    justify-content: center;
+    flex: 1 0 auto;
 }
 
+form{ max-width:55rem; 
+      margin:4rem auto; 
+      
+}
 
 .title-container{
     margin-left: 8rem;
 }
 
-.form-container{
-    width: 100%;
-    border-radius: 1rem;
-    padding-bottom: 2rem;
+.feedback-input {
+  color:#f6ffff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #f6ffff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
 }
 
-main form{
-    color: #f6ffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.feedback-input:focus{ 
+  border:2px solid #f6ffff; }
+
+textarea {
+  min-height: 5rem;
+  height: 17rem;
+  line-height: 150%;
+  resize: vertical;
 }
 
-main span{
-    align-items: center;
-    padding: 2rem 0rem;
-    font-size: 2rem;
-    flex: 0;
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:rgb(4, 4, 103);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color: #f6ffff;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover{ 
+  background: rgb(23, 23, 165); }
+
+  footer {
+    flex-shrink: 0; 
 }
 
-#send-message{
-    display: inline-block;
-    font-size: 2rem;
-    padding: 1.5rem 2.5rem;
-    color: #f6ffff;
-    background-color: rgb(4, 4, 103);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background 0.2s ease-in-out;
-}
-
-#send-message:hover {
-    background-color: rgb(33, 33, 149);
-}
-
-footer{
-    margin-top: auto;
-}
-
-textarea{
-    width: 100rem;
-    height: 20rem;
-}
-
-input[type="text"], input[type="email"], textarea{
-    margin-bottom: 2rem;
-    outline: 0.1rem solid #f6ffff;
-    background: none;
-    font-size: 2.5rem;
-    color:#f6ffff;
-    border-radius: 0.25rem;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
-    outline: 0.3rem solid #f6ffff
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #f6ffff;
+    transition: background-color 5000s ease-in-out 0s;
 }
