@@ -184,7 +184,7 @@ footer p{
     position: relative;
     overflow: hidden;
     background-color: #000;
-    background-image: url(./Images/Lazy-nebula.jpg) !important;
+    background-image: url(./Images/Lazy-nebula.jpg);
     cursor: default;
 }
 
