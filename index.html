@@ -1,76 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.CSS">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" href="./Images/favicon-32x32.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.CSS" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="icon" href="./Images/favicon-32x32.png" type="image/png" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="starfield">
-    <nav>
+      <nav>
         <ul>
-            <li id="nav-name">Alexander <span>Charnock</span></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li id="nav-name">Alexander <span>Charnock</span></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-    <canvas></canvas>
-    <h1 id="starfield-title">Welcome to my coding portfolio!</h1>
+      </nav>
+      <canvas></canvas>
+      <h1 id="starfield-title">Welcome to my coding portfolio!</h1>
     </div>
     <main>
-    <div id="about" class="about-me-container">
+      <div id="about" class="about-me-container">
         <h1 class="title-container"><span class="title">About me</span></h1>
-            <p>Hello, I'm Alex, a passionate and dedicated individual on a journey to become a front-end developer. At 26 years old, I've spent 
-                the past year immersing myself in the world of coding, constantly pushing myself to learn and grow in this exciting field.
-                Currently, I work as a senior healthcare assistant in a psychiatric hospital, where I've gained valuable experience in providing 
-                compassionate care and support to patients. This role has taught me the importance of empathy, patience, and effective communication
-                skills that I believe will greatly benefit me in my pursuit of a career in web development.<br><br>I hold a 2:1 degree in psychology, which has
-                deepened my understanding of human behavior and cognition. This background enables me to approach web development with a unique 
-                perspective, considering both usability and user experience in my designs. Front-end development has captured my interest, as I find 
-                joy in creating visually appealing and interactive interfaces that enhance user engagement.<br><br> I'm drawn to the ever-evolving nature of 
-                this field, constantly seeking to stay updated with the latest technologies and industry best practices. With a strong foundation in 
-                coding and a genuine passion for front-end development, I am now actively seeking opportunities to transition into this exciting sector. 
-                I am eager to contribute my skills, creativity, and drive to create impactful and user-friendly web experiences. Join me on this exciting
-                journey as I continue to expand my knowledge, refine my skills, and embark on new and challenging projects. Together, let's shape the 
-                digital world with innovation and meaningful user experiences.</p>
-    </div>
-    <div id="projects" class="project-container">
-        <h1 class="title-container"><span class="title">Learning Projects</span></h1>
-            <details>
-                <summary>Trading Club</summary>
-                <img src="./Images/Trading-club.png" alt="Image of trading club">
-            </details>
-            <details>
-                <summary>Styling CheatSheet</summary>
-                <img src="./Images/Style-guide.png" alt="Image of styling cheatsheet">
-            </details>
-            <details>
-                <summary>Tea Cozy Project</summary>
-                <img src="./Images/Tea-cozy.png" alt="Image of tea cozy project">
-            </details>
-    </div>
-    <div id="skills" class="skills-container">
+        <p>
+          Hello, I'm Alex, a passionate and dedicated individual on a journey to
+          become a part of the IT space. At <span id="age"></span> years old,
+          I've spent my time immersing myself in the world of coding, constantly
+          pushing myself to learn and grow in this exciting field. Currently, I
+          work as a Security Lead on a Psychiatric Intensive Care Unit (PICU)
+          ward, where I am responsible for creating and implementing training
+          plans designed to ensure the safety of both staff and patients. In
+          this role, I have developed a standardized training pack that helps
+          unify staff training across the ward, ensuring consistency and clarity
+          in all procedures. I also create training materials and implement them
+          in accordance with my manager’s directives, addressing the specific
+          needs of the ward. This position has deepened my leadership,
+          problem-solving, and communication skills as I work closely with the
+          team to improve safety standards. <br /><br />My experience in
+          healthcare, combined with my new responsibilities, has taught me
+          valuable lessons in risk management, crisis intervention, and the
+          importance of clear, effective communication under pressure. This
+          experience has further enhanced my organizational skills, allowing me
+          to coordinate action plans that directly contribute to a safer
+          environment for all. Before stepping into this role, I worked as a
+          Senior Healthcare Assistant in the same psychiatric hospital, where I
+          gained essential experience in providing compassionate care. My time
+          in healthcare has not only strengthened my interpersonal skills but
+          has also given me the ability to handle high-pressure situations
+          calmly and effectively—qualities. I hold a 2:1 degree in psychology,
+          which deepened my understanding of human behavior and cognition,
+          enabling me to approach IT with a unique perspective. <br /><br />
+          I am drawn to the ever-evolving nature of the tech
+          field, always seeking to stay updated with the latest technologies and
+          industry best practices. With a solid foundation in coding, hands-on
+          experience in creating training systems, and a genuine passion IT, I
+          am now actively seeking opportunities to transition into this exciting
+          sector. I am eager to contribute my skills, creativity, and drive to
+          create a better work enviroment.
+        </p>
+      </div>
+      <div id="projects" class="project-container">
+        <h1 class="title-container">
+          <span class="title">Notable projects</span>
+        </h1>
+        <a
+          class="link"
+          href="https://allocation-amber.vercel.app/"
+          target="_blank"
+          >Allocation website</a
+        >
+        <p class="project-description">
+          This website uses a heuristic algorithm to efficiently assign staff
+          across 12-hour shifts based on patient needs, factoring in breaks and
+          other tasks. The tool ensures staff are evenly distributed and
+          displayed in an organized table for easy management.
+        </p>
+        <br />
+        <a
+          class="link"
+          href="https://intropicac.github.io/SamAuthor/"
+          target="_blank"
+          >Author sales page</a
+        >
+        <p class="project-description">
+          This website is tailored to reflect the unique style of an aspiring
+          author, showcasing their work with a direct link to their book for
+          readers to explore and enjoy, inlcuding links to contact and socials.
+        </p>
+        <h1 class="title-container">
+          <span class="title">Learning Projects</span>
+        </h1>
+        <details>
+          <summary>Trading Club</summary>
+          <img src="./Images/Trading-club.png" alt="Image of trading club" />
+        </details>
+        <details>
+          <summary>Styling CheatSheet</summary>
+          <img
+            src="./Images/Style-guide.png"
+            alt="Image of styling cheatsheet"
+          />
+        </details>
+        <details>
+          <summary>Tea Cozy Project</summary>
+          <img src="./Images/Tea-cozy.png" alt="Image of tea cozy project" />
+        </details>
+      </div>
+      <div id="skills" class="skills-container">
         <h1 class="title-container"><span class="title">Skills</span></h1>
         <i class="fab fa-html5" title="HTML-5"></i>
         <i class="fab fa-css3-alt" title="CSS-3"></i>
         <i class="fab fa-js" title="JavaScipt"></i>
+        <i class="fab fa-react" title="React"></i>
         <i class="fab fa-git" title="Git"></i>
         <i class="fab fa-github" title="Github"></i>
-    </div>
-
-    
-
+      </div>
     </main>
     <footer>
-        <p>&copy; 2023 Alex</p>
+      <p>&copy; 2024 Alex</p>
     </footer>
 
     <script src="index.JS"></script>
-
-</body>
+  </body>
 </html>

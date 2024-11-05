@@ -265,8 +265,25 @@ window.addEventListener('scroll', function() {
   }
 });
 
-var img = new Image();
-img.src = "./Images/rainbow-nebula.jpg";
-img.onload = function() {
-    document.getElementById('starfield').style.backgroundImage = 'url(' + img.src + ')';
+function calculateAge(birthDate) {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  const dayDiff = today.getDate() - birthDate.getDate();
+
+  // If the birthday hasn't occurred yet this year, subtract 1 from age
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+      age--;
+  }
+
+  return age;
+}
+
+
+const birthDate = new Date(1997, 3, 10); 
+
+// Update the age element
+window.onload = function() {
+  const ageElement = document.getElementById('age');
+  ageElement.textContent = calculateAge(birthDate);
 };
