@@ -287,3 +287,20 @@ window.onload = function() {
   const ageElement = document.getElementById('age');
   ageElement.textContent = calculateAge(birthDate);
 };
+
+function copyEmail() {
+  // Copy the email to the clipboard
+  const email = "alexccharnock50@hotmail.com";
+  navigator.clipboard.writeText(email).then(() => {
+      // Show confirmation message
+      const message = document.getElementById("copyMessage");
+      message.style.display = "block";
+      
+      // Hide message after 2 seconds
+      setTimeout(() => {
+          message.style.display = "none";
+      }, 2000);
+  }).catch(err => {
+      console.error('Could not copy email: ', err);
+  });
+}

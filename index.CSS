@@ -25,12 +25,13 @@ nav #name,
 .project-container summary,
 footer p,
 nav span,
-p{
+p,
+.contact{
     color: #f6ffff;
 }
 
 main{
-    padding: 0rem 8rem;
+    padding: 0rem 8rem 8rem 8rem;
 }
 
 nav{
@@ -189,8 +190,14 @@ nav ul li a:hover{
     }
 }
 
-footer{
+
+.contact{
+    font-size: 2rem;
+    cursor: pointer;
+}
+footer {
     display: flex;
+    flex-direction: column; /* Stack items vertically */
     height: 6rem;
     background-color: rgb(4, 4, 103);
     clip-path: polygon(5% 0, 94% 0, 100% 100%, 0 100%);
