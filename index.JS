@@ -234,6 +234,15 @@ function onMouseLeave() {
 
 }
 
+window.addEventListener('load', function() {
+  const highQualityImage = new Image();
+  highQualityImage.src = './Images/rainbow-nebula.jpg'; // Relative path to high-quality image
+
+  // Once the high-quality image is loaded, set it as the background
+  highQualityImage.onload = function() {
+      document.getElementById('starfield').style.backgroundImage = `url(${highQualityImage.src})`;
+  };
+});
 
 window.addEventListener('scroll', function() {
   var element = document.getElementById('about');
@@ -305,12 +314,3 @@ function copyEmail() {
   });
 }
 
-window.addEventListener('load', function() {
-  const highQualityImage = new Image();
-  highQualityImage.src = './Images/rainbow-nebula.jpg'; // Relative path to high-quality image
-
-  // Once the high-quality image is loaded, set it as the background
-  highQualityImage.onload = function() {
-      document.getElementById('starfield').style.backgroundImage = `url(${highQualityImage.src})`;
-  };
-});
