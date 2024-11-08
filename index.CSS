@@ -359,3 +359,53 @@ body:after {
     opacity: 1; 
     left: 0; 
 }
+
+@media (max-width: 768px) {
+    main {
+        padding: 2rem; /* Remove padding on mobile */
+    }
+
+    /* Remove padding and margins on other elements for mobile */
+    .about-me-container,
+    .project-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .skills-container{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap within the container *//* Center icons within the container */
+        justify-content: center;
+        gap: 1rem; /* Space between icons */
+        margin-bottom: 4rem;
+    }
+
+    .title-container,
+    .project-description,
+    .link {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        margin-right: 1rem;
+    }
+
+    .fab.fa-html5,
+    .fab.fa-css3-alt,
+    .fab.fa-js,
+    .fab.fa-git,
+    .fab.fa-github,
+    .fab.fa-react {
+        margin-top: 3rem;
+        color: white; 
+        font-size: 6rem;
+        width: 7rem;
+        animation: animate 2.5s linear infinite;
+        text-shadow: 0 0 5rem #0072ff, 0 0 10rem #0072ff, 0 0 15rem #0072ff, 0 0 20rem #0072ff;
+}
+}
+
