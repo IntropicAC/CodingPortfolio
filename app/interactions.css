@@ -167,6 +167,87 @@
   transform: scale(1.025);
 }
 
+.evidence-links {
+  margin-top: 0;
+}
+
+.capability-section {
+  padding-top: clamp(56px, 8vh, 88px);
+  padding-bottom: clamp(56px, 8vh, 88px);
+}
+
+.capability-section .section-title {
+  font-size: clamp(29px, 4.2vw, 50px);
+}
+
+.capability-grid {
+  max-width: 1080px;
+  margin-top: clamp(28px, 4vw, 44px);
+}
+
+.capability-grid article {
+  gap: 8px;
+  padding: clamp(16px, 2vw, 20px);
+}
+
+.capability-grid article > .eyebrow {
+  margin-bottom: 3px;
+  font-size: 9.5px;
+}
+
+.capability-grid h3 {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.capability-grid article > p:not(.eyebrow) {
+  font-size: 12.5px;
+  line-height: 1.52;
+}
+
+.technology-marker {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid rgba(241, 237, 230, 0.1);
+}
+
+.technology-icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  color: var(--tech-color, var(--teal));
+}
+
+.technology-marker span:last-child {
+  display: grid;
+  gap: 1px;
+}
+
+.technology-marker small {
+  color: #777b80;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.technology-marker strong {
+  color: #d9d5ce;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10.5px;
+  font-weight: 400;
+}
+
+.technology-marker--frontend { --tech-color: #62dafb; }
+.technology-marker--backend { --tech-color: #77b8f5; }
+.technology-marker--optimisation { --tech-color: #ffb13c; }
+.technology-marker--security { --tech-color: #7fe6da; }
+.technology-marker--deployment { --tech-color: #d8d8de; }
+.technology-marker--collaboration { --tech-color: #ff9a73; }
+
 .client--reverse .image-link {
   order: 2;
 }

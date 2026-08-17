@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Alex Charnock monogram">
+  <defs>
+    <linearGradient id="edge" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7fe6da" />
+      <stop offset="1" stop-color="#46d6c6" stop-opacity=".45" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#08090c" />
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#edge)" stroke-width="2" />
+  <path d="m10.5 47 11-29 11 29M15.3 36.5h12.3" fill="none" stroke="#46d6c6" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.4" />
+  <path d="M53 24.2a12.8 12.8 0 1 0 0 15.6" fill="none" stroke="#f1ede6" stroke-linecap="round" stroke-width="4.4" />
+</svg>
