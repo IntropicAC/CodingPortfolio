@@ -341,7 +341,7 @@ export default function Portfolio() {
           <p className="product-intro" data-reveal>A staff observation allocation and optimisation tool for mental health inpatient wards. It helps nurses create allocations that are fairer, faster and more consistent, while keeping the nurse in charge in control of the final decision.</p>
           <div className="button-row product-actions">
             <a className="button button--teal" href="https://www.allocateit.co.uk" target="_blank" rel="noreferrer">allocateit.co.uk</a>
-            <a className="button button--outline" href="https://youtu.be/l3bs_asxHqg" target="_blank" rel="noreferrer">Watch the demo</a>
+            <a className="button button--outline" href="https://youtu.be/Y3shM4XjBDo" target="_blank" rel="noreferrer">Watch the demo</a>
           </div>
 
           <div className="solver" data-reveal>
